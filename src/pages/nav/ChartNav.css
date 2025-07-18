@@ -1,0 +1,48 @@
+/* ChartNav.css */
+
+.chart-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.chart-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.chart-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chart-author {
+  font-size: 0.9rem;
+  color: #555;
+  align-self: flex-start;
+}
+
+.page-buttons button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  font-weight: bold;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page-buttons button:hover {
+  background-color: #e9ecef;
+}
+
+.page-buttons button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
