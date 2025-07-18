@@ -53,7 +53,6 @@ const CesiumJSFullPage = () => {
   description: `
     <h3>롯데월드타워</h3>
     <p>서울 송파구에 위치한 초고층 빌딩입니다.</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Lotte_World_Tower_in_September_2016.jpg/320px-Lotte_World_Tower_in_September_2016.jpg" width="300" />
   `,
 });
 
