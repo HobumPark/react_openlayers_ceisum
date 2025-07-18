@@ -9,8 +9,10 @@ const ChartNav = () => {
   const menuItems = [
     { id: 1, label: '오픈레이어 전체', path: '/open-full' },
     { id: 2, label: '오픈레이어 일부분', path: '/open-partial' },
-    { id: 3, label: '세슘JS 전체', path: '/cesium-full' },
-    { id: 4, label: '세슘JS 일부분', path: '/cesium-partial' },
+    { id: 3, label: '세슘JS 기본', path: '/cesium-full' },
+    { id: 4, label: '세슘JS 마커', path: '/cesium-marker' },
+    { id: 5, label: '세슘JS 벤처벨리', path: '/cesium-road' },
+    { id: 6, label: '세슘JS 강변북로', path: '/cesium-road2' },
   ];
 
   const handleClick = (item) => {

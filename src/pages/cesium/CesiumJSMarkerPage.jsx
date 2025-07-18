@@ -32,15 +32,63 @@ const CesiumJSFullPage = () => {
       // 태양 조명 효과 끄기 (그림자 등 제거)
       viewer.scene.globe.enableLighting = false;
 
-      // 카메라 초기 위치 설정 (경북 포항 근처 좌표)
-      viewer.camera.setView({
-        destination: Cesium.Cartesian3.fromDegrees(128.62681, 35.86697, 15000), // 위도, 경도, 높이
-        orientation: {
-          heading: Cesium.Math.toRadians(0), // 북쪽을 바라봄
-          pitch: Cesium.Math.toRadians(-45), // 지면을 45도 아래로 바라봄
-          roll: 0, // 회전 없음
-        },
-      });
+      const markerPosition = Cesium.Cartesian3.fromDegrees(127.1026, 37.5126, 0);
+
+    // 마커 추가
+    viewer.entities.add({
+  name: "롯데월드 타워",
+  position: markerPosition,
+  billboard: {
+    image: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+    width: 32,
+    height: 32,
+    verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+  },
+  label: {
+    text: "롯데월드타워",
+    font: "14pt sans-serif",
+    verticalOrigin: Cesium.VerticalOrigin.TOP,
+    pixelOffset: new Cesium.Cartesian2(0, -40),
+  },
+  description: `
+    <h3>롯데월드타워</h3>
+    <p>서울 송파구에 위치한 초고층 빌딩입니다.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Lotte_World_Tower_in_September_2016.jpg/320px-Lotte_World_Tower_in_September_2016.jpg" width="300" />
+  `,
+});
+
+// 석촌호수 마커
+viewer.entities.add({
+  name: "석촌호수",
+  position: Cesium.Cartesian3.fromDegrees(127.1038, 37.5108),
+  billboard: {
+    image: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+    width: 28,
+    height: 28,
+    verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+  },
+  label: {
+    text: "석촌호수",
+    font: "13pt sans-serif",
+    verticalOrigin: Cesium.VerticalOrigin.TOP,
+    pixelOffset: new Cesium.Cartesian2(0, -35),
+  },
+  description: `
+    <h3>석촌호수</h3>
+    <p>롯데월드 바로 옆의 산책 명소입니다.</p>
+  `,
+});
+
+    // 카메라가 마커를 정확히 중심에 보이도록 이동
+    viewer.camera.setView({
+      destination: Cesium.Cartesian3.fromDegrees(127.1026, 37.5126, 1000), // 마커보다 위쪽 위치
+      orientation: {
+        heading: Cesium.Math.toRadians(240),
+        pitch: Cesium.Math.toRadians(-90), // 정확히 아래를 바라봄
+        roll: 0,
+      },
+    });
+
 
       // 이미지 레이어 추가 시 콘솔 로그 출력 (디버깅용)
       viewer.scene.imageryLayers.layerAdded.addEventListener(() => {

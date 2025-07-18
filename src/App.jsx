@@ -6,7 +6,9 @@ import ChartNav from './pages/nav/ChartNav'
 import OpenLayersFullPage from './pages/openlayers/OpenLayersFullPage'
 import OpenLayersPartialPage from './pages/openlayers/OpenLayersPartialPage'
 import CesiumJSFullPage from './pages/cesium/CesiumJSFullPage'
-import CesiumJSPartialPage from './pages/cesium/CesiumJSPartialPage'
+import CesiumJSMarkerPage from './pages/cesium/CesiumJSMarkerPage'
+import CesiumJSRoadPage from './pages/cesium/CesiumJSRoadPage'
+import CesiumJSRoadPage2 from './pages/cesium/CesiumJSRoadPage2'
 
 function App() {
   
@@ -20,7 +22,9 @@ function App() {
           <Route path="/open-full" element={<OpenLayersFullPage />} />
           <Route path="/open-partial" element={<OpenLayersPartialPage />} />
           <Route path="/cesium-full" element={<CesiumJSFullPage />} />
-          <Route path="/cesium-partial" element={<CesiumJSPartialPage />} />
+          <Route path="/cesium-marker" element={<CesiumJSMarkerPage />} />
+          <Route path="/cesium-road" element={<CesiumJSRoadPage />} />
+          <Route path="/cesium-road2" element={<CesiumJSRoadPage2 />} />
         </Routes>
       </BrowserRouter>
     </>
