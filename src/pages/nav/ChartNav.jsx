@@ -13,6 +13,7 @@ const ChartNav = () => {
     { id: 4, label: '세슘JS 마커', path: '/cesium-marker' },
     { id: 5, label: '세슘JS 벤처벨리', path: '/cesium-road' },
     { id: 6, label: '세슘JS 강변북로', path: '/cesium-road2' },
+    { id: 7, label: '세슘JS 강변북로(실시간)', path: '/cesium-road3' },
   ];
 
   const handleClick = (item) => {

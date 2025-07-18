@@ -9,6 +9,7 @@ import CesiumJSFullPage from './pages/cesium/CesiumJSFullPage'
 import CesiumJSMarkerPage from './pages/cesium/CesiumJSMarkerPage'
 import CesiumJSRoadPage from './pages/cesium/CesiumJSRoadPage'
 import CesiumJSRoadPage2 from './pages/cesium/CesiumJSRoadPage2'
+import CesiumJSRoadPage3 from './pages/cesium/CesiumJSRoadPage3'
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
           <Route path="/cesium-marker" element={<CesiumJSMarkerPage />} />
           <Route path="/cesium-road" element={<CesiumJSRoadPage />} />
           <Route path="/cesium-road2" element={<CesiumJSRoadPage2 />} />
+          <Route path="/cesium-road3" element={<CesiumJSRoadPage3 />} />
         </Routes>
       </BrowserRouter>
     </>
