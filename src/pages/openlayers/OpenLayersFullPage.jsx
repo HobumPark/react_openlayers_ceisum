@@ -160,10 +160,9 @@ const OpenLayersFullPage = () => {
       }),
     });
 
-    openMapTilesRasterLayerRef.current = new VectorTileLayer({
-      source: new VectorTileSource({
-        format: new MVT(),
-        url: 'https://api.maptiler.com/tiles/v3/{z}/{x}/{y}.pbf?key=XLpeaVkcWxtAYdW1mfE2',
+    openMapTilesRasterLayerRef.current = new TileLayer({
+      source: new XYZ({
+        url: 'https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=XLpeaVkcWxtAYdW1mfE2'
       }),
       visible: false,
       title: 'openmaptiles',
