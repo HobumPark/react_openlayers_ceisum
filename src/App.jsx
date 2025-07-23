@@ -4,7 +4,8 @@ import './App.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import ChartNav from './pages/nav/ChartNav'
 import OpenLayersFullPage from './pages/openlayers/OpenLayersFullPage'
-import OpenLayersPartialPage from './pages/openlayers/OpenLayersPartialPage'
+import OpenLayersImagePage from './pages/openlayers/OpenLayersImagePage'
+import MapBoxPage from './pages/mapbox/MapBoxPage'
 import CesiumJSFullPage from './pages/cesium/CesiumJSFullPage'
 import CesiumJSMarkerPage from './pages/cesium/CesiumJSMarkerPage'
 import CesiumJSRoadPage from './pages/cesium/CesiumJSRoadPage'
@@ -21,7 +22,8 @@ function App() {
         <Routes>
           <Route path="/" element={<OpenLayersFullPage />} />
           <Route path="/open-full" element={<OpenLayersFullPage />} />
-          <Route path="/open-partial" element={<OpenLayersPartialPage />} />
+          <Route path="/open-partial" element={<OpenLayersImagePage />} />
+          <Route path="/map-box" element={<MapBoxPage />} />
           <Route path="/cesium-full" element={<CesiumJSFullPage />} />
           <Route path="/cesium-marker" element={<CesiumJSMarkerPage />} />
           <Route path="/cesium-road" element={<CesiumJSRoadPage />} />

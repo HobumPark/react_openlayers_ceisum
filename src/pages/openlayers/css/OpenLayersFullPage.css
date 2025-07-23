@@ -1,0 +1,15 @@
+.ol-control button {
+  width:50px;
+  height:50px;
+  background-color: #777;
+  color:#fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 2px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.ol-control button:hover {
+  background-color: #eee;
+}

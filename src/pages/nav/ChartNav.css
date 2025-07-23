@@ -14,6 +14,19 @@
   gap: 0.5rem;
 }
 
+.chart-menu button {
+  font-size:12px;
+  margin-right: 8px;
+  padding: 6px 10px;
+  font-weight: bold;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
 .chart-row {
   display: flex;
   align-items: center;
@@ -26,16 +39,6 @@
   align-self: flex-start;
 }
 
-.page-buttons button {
-  margin-right: 8px;
-  padding: 6px 12px;
-  font-weight: bold;
-  border: 1px solid #999;
-  border-radius: 4px;
-  background-color: #f8f9fa;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
 
 .page-buttons button:hover {
   background-color: #e9ecef;
