@@ -10,11 +10,13 @@ const ChartNav = () => {
     { id: 1, label: '오픈레이어 전체', path: '/open-full' },
     { id: 2, label: '오픈레이어 이미지', path: '/open-image' },
     { id: 3, label: '레프릿 전체', path: '/leaflet-full' },
-    { id: 4, label: '세슘JS 기본', path: '/cesium-full' },
-    { id: 5, label: '세슘JS 마커', path: '/cesium-marker' },
-    { id: 6, label: '세슘JS 벤처벨리', path: '/cesium-road' },
-    { id: 7, label: '세슘JS 강변북로', path: '/cesium-road2' },
-    { id: 8, label: '세슘JS 강변북로(실시간)', path: '/cesium-road3' },
+    { id: 4, label: '카카오 전체', path: '/kakao-full' },
+    { id: 5, label: '카카오 전체2', path: '/kakao-full2' },
+    { id: 6, label: '세슘JS 기본', path: '/cesium-full' },
+    { id: 7, label: '세슘JS 마커', path: '/cesium-marker' },
+    { id: 8, label: '세슘JS 벤처벨리', path: '/cesium-road' },
+    { id: 9, label: '세슘JS 강변북로', path: '/cesium-road2' },
+    { id: 10, label: '세슘JS 강변북로(실시간)', path: '/cesium-road3' },
   ];
 
   const handleClick = (item) => {

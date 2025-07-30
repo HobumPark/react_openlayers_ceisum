@@ -1,0 +1,23 @@
+.marker-info-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  width: 220px;
+  height: 60px;
+}
+
+.marker-info-box img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.marker-info-box span {
+  font-weight: bold;
+  font-size: 14px;
+}

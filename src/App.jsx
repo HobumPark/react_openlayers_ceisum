@@ -11,6 +11,8 @@ import CesiumJSRoadPage from './pages/cesium/CesiumJSRoadPage'
 import CesiumJSRoadPage2 from './pages/cesium/CesiumJSRoadPage2'
 import CesiumJSRoadPage3 from './pages/cesium/CesiumJSRoadPage3'
 import LeafletPage from './pages/leaftlet/LeafletPage'
+import KakaoMapPage from './pages/kakao/KakaoMapPage'
+import KakaoMapPage2 from './pages/kakao/KakaoMapPage2'
 
 function App() {
   
@@ -24,6 +26,8 @@ function App() {
           <Route path="/open-full" element={<OpenLayersFullPage />} />
           <Route path="/open-image" element={<OpenLayersImagePage />} />
           <Route path="/leaflet-full" element={<LeafletPage />} />
+          <Route path="/kakao-full" element={<KakaoMapPage />} />
+          <Route path="/kakao-full2" element={<KakaoMapPage2 />} />
           <Route path="/cesium-full" element={<CesiumJSFullPage />} />
           <Route path="/cesium-marker" element={<CesiumJSMarkerPage />} />
           <Route path="/cesium-road" element={<CesiumJSRoadPage />} />
